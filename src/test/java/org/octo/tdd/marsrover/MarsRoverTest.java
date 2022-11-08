@@ -196,4 +196,17 @@ public class MarsRoverTest {
         assertEquals(new Rover(-1,0, Ouest), rover);
     }
 
+    @Test
+    public void Quand_le_rover_avance_vers_le_nord_deux_fois_la_coordonnee_y_incremente_deux_fois() {
+        //Given
+        Rover rover = new Rover(0, 0, Nord);
+
+        //When
+        rover.avancer();
+        rover.avancer();
+
+        //Then
+        assertEquals(new Rover(0,2, Nord), rover);
+    }
+
 }
