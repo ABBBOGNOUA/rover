@@ -65,6 +65,6 @@ public class Rover {
         } else if (direction == Ouest) {
             this.x = -1;
         } else
-            this.y = 1;
+            this.y = direction.getDeplacementY();
     }
 }
