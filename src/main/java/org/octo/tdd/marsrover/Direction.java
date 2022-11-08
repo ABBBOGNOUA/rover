@@ -4,7 +4,7 @@ public enum Direction {
     Nord("Ouest","Est", 1),
     Sud("Est", "Ouest", -1),
     Est("Nord", "Sud", 1, 0),
-    Ouest("Sud", "Nord");
+    Ouest("Sud", "Nord", -1, 0);
 
     private String droite;
     private String gauche;

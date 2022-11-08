@@ -63,7 +63,7 @@ public class Rover {
         else if (direction == Sud) {
             this.y = direction.getDeplacementY();
         } else if (direction == Ouest) {
-            this.x = -1;
+            this.x = direction.getDeplacementX();
         } else
             this.y = direction.getDeplacementY();
     }
