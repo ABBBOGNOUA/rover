@@ -58,7 +58,7 @@ public class Rover {
     }
 
     public void avancer() {
-        this.x = direction.getDeplacementX();
+        this.x += direction.getDeplacementX();
         this.y += direction.getDeplacementY();
     }
 }
