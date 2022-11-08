@@ -1,8 +1,8 @@
 package org.octo.tdd.marsrover;
 
 public enum Direction {
-    Nord("Ouest","Est", 1),
-    Sud("Est", "Ouest", -1),
+    Nord("Ouest", "Est", 0, 1),
+    Sud("Est", "Ouest", 0, -1),
     Est("Nord", "Sud", 1, 0),
     Ouest("Sud", "Nord", -1, 0);
 
