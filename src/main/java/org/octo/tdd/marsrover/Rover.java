@@ -58,18 +58,7 @@ public class Rover {
     }
 
     public void avancer() {
-        if (direction == Est) {
-            this.x = direction.getDeplacementX();
-            this.y = direction.getDeplacementY();
-        } else if (direction == Sud) {
-            this.x = direction.getDeplacementX();
-            this.y = direction.getDeplacementY();
-        } else if (direction == Ouest) {
-            this.x = direction.getDeplacementX();
-            this.y = direction.getDeplacementY();
-        } else {
-            this.x = direction.getDeplacementX();
-            this.y = direction.getDeplacementY();
-        }
+        this.x = direction.getDeplacementX();
+        this.y = direction.getDeplacementY();
     }
 }
