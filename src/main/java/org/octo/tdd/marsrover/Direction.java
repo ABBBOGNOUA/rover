@@ -3,12 +3,13 @@ package org.octo.tdd.marsrover;
 public enum Direction {
     Nord("Ouest","Est", 1),
     Sud("Est", "Ouest", -1),
-    Est("Nord", "Sud"),
+    Est("Nord", "Sud", 1, 0),
     Ouest("Sud", "Nord");
 
     private String droite;
     private String gauche;
     private int deplacementY;
+    private int deplacementX;
 
     Direction(String gauche, String droite) {
         this.gauche = gauche;
@@ -20,8 +21,17 @@ public enum Direction {
         this.deplacementY = deplacementY;
     }
 
+    Direction(String gauche, String droite, int deplacementX, int deplacementY) {
+        this(gauche, droite, deplacementY);
+        this.deplacementX = deplacementX;
+    }
+
     public int getDeplacementY() {
         return this.deplacementY;
+    }
+
+    public int getDeplacementX() {
+        return deplacementX;
     }
 
     public Direction regarderADroite() {
